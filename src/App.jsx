@@ -36,13 +36,14 @@
 
 
 
-// 1. Create Entry Component.
+// 1. Create Entry Component. *done*
 // 2. Create props to replace hardcoded data.(s3 for starters)
 // 3a. Import emojipedia const.
 // 3b. Map through the emojipedia array/render Entry components.
 
 import React from "react";
 import './styles.css'
+import Entry from "./components/Entry";
 
 function App() {
   return (
@@ -52,33 +53,12 @@ function App() {
     </h1>
 
     <dl className="dictionary">
-        <div className="term">
-          <dt>
-            <span className="emoji" role="img" aria-label="Tense Biceps">
-              🙏
-            </span>
-            <span>Person With Folded Hands</span>
-          </dt>
-          <dd>
-            Two hands pressed together. Is currently very introverted, saying a
-            prayer, or hoping for enlightenment. Is also used as a “high five”
-            or to say thank you.
-          </dd>
-        </div>
-        <div className="term">
-          <dt>
-            <span className="emoji" role="img" aria-label="Tense Biceps">
-              🤣
-            </span>
-            <span>Rolling On The Floor, Laughing</span>
-          </dt>
-          <dd>
-            This is funny! A smiley face, rolling on the floor, laughing. The
-            face is laughing boundlessly. The emoji version of “rofl“. Stands
-            for „rolling on the floor, laughing“.
-          </dd>
-        </div>
-      </dl>
+
+        < Entry />
+        < Entry />
+        < Entry />
+        
+        </dl>
     </div>
   );
 }
