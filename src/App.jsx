@@ -44,6 +44,20 @@
 import React from "react";
 import './styles.css'
 import Entry from "./components/Entry";
+import emojipedia from "./emojipedia";
+
+function createEntry(emojiTerm) {
+return (
+<Entry 
+key={emojiTerm.id}
+emoji={emojiTerm.emoji}
+name={emojiTerm.name}
+description={emojiTerm.meaning}
+
+/>
+);
+}
+
 
 function App() {
   return (
@@ -54,10 +68,7 @@ function App() {
 
     <dl className="dictionary">
 
-        < Entry />
-        < Entry />
-        < Entry />
-        
+       {emojipedia.map(createEntry)}
         </dl>
     </div>
   );

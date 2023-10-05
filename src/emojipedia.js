@@ -23,4 +23,4 @@ const emojipedia = [
 ];
 
 
-export default emojepedia;
+export default emojipedia;
